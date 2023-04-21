@@ -4,3 +4,11 @@
     justify-content: space-between;
     margin-top: 15px;
 }
+
+.home {
+    display: grid;
+
+    justify-content: center;
+
+    padding-top: 4rem;
+}

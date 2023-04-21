@@ -37,10 +37,12 @@ function Home() {
         page == null || pokemon == null ? "Loading..." :
             <div>
                 <NavBar />
-                <PokemonList data={pokemon} />
-                <div className="buttons">
-                    <button disabled={page.previous == null ? true : false} onClick={handlePrev}>Prev</button>
-                    <button disabled={page.next == null ? true : false} onClick={handleNext}>Next</button>
+                <div className="home">
+                    <PokemonList data={pokemon} />
+                    <div className="buttons">
+                        <button disabled={page.previous == null ? true : false} onClick={handlePrev}>Prev</button>
+                        <button disabled={page.next == null ? true : false} onClick={handleNext}>Next</button>
+                    </div>
                 </div>
             </div>
     )

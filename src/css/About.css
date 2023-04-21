@@ -1,0 +1,11 @@
+.about {
+    display: grid;
+
+    justify-content: center;
+
+    padding-top: 4rem;
+}
+
+.about p {
+    width: 450px;
+}
