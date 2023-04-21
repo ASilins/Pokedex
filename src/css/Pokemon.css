@@ -1,0 +1,119 @@
+/* Pokemon */
+
+.pokemon {
+    width: 200px;
+    height: 80px;
+
+    border-radius: 14px;
+    background-color: rgb(215, 215, 215);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 300ms;
+}
+
+.pokemon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sprite {
+    max-height: 60px;
+    width: auto;
+}
+
+.pokemonInfo {
+    padding: 5px 0 5px 15px;
+}
+
+.pokemonInfo h1 {
+    font-size: large;
+    text-transform: capitalize;
+}
+
+.pokemonInfo p {
+    font-size: small;
+}
+
+/* Pokemon List */
+
+.pokemonList {
+    display: grid;
+    width: 852px;
+    grid-template-columns: repeat(4, 1fr);
+
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/* Pokemon detailed info */
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.exitButton {
+    position: relative;
+
+    margin-top: 100px;
+    margin-left: 50px;
+
+    cursor: pointer;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.pokemonDetailed{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(147, 147, 147, 0.5);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pokemonDetailedBox {
+    position: absolute;
+
+    z-index: 1;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+
+    background-color: rgb(188, 188, 188);
+    border-radius: 10px;
+}
+
+.pokemonDetailedInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pokemonDetailedInfo img {
+    margin: auto;
+}
+
+.number {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cap {
+    text-transform: capitalize;
+}
